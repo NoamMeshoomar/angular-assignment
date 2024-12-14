@@ -1,0 +1,33 @@
+<div class="container">
+    <form [formGroup]="form">
+        <app-dropdown 
+            [label]="'סוג תביעת על: '"
+            [control]="form.controls.superClaimType"
+            [items]="inputsMockData.getSuperClaimType"
+        />
+        <div class="date-input">
+            <label for="">תאריך אירוע</label>
+            <input type="date" formControlName="eventDate" >
+        </div>
+        <app-dropdown 
+            [label]="'סיבת אירוע: '" 
+            [control]="form.controls.claimCause"
+            [items]="inputsMockData.getClaimCause"
+        />
+        <app-dropdown 
+            [label]="'מהות האירוע: '" 
+            [control]="form.controls.injuryType"
+            [items]="inputsMockData.getInjuryType"
+        />
+        <app-dropdown 
+            [label]="'תביעה הוגשה באמצעות: '" 
+            [control]="form.controls.submittedBy"
+            [items]="inputsMockData.getSubmittedBy"
+        />
+        <app-dropdown 
+            [label]="'אופן קבלת התביעה: '" 
+            [control]="form.controls.submittionMethod"
+            [items]="inputsMockData.getSubmittionMethod"
+        />
+    </form>
+</div>

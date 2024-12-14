@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="top">
+        <div class="information">
+            <p>תביעת על: {{superClaim.superClaimNum}}</p>
+            <p>מצב תביעה: {{superClaim.superClaimStatus.value}}</p>
+        </div>
+        <button (click)="onClickResetForm()">רענון תהליך</button>
+    </div>
+    <app-progress-data />
+    <app-contacts-actions />
+    <app-contacts-list />
+    <div class="bottom">
+        <button (click)="onClickSubmitForm()">המשך</button>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+    <p class="section-title">אנשי קשר</p>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <table>
+            <tr>
+                <th>מועדף</th>
+                <th>שם איש קשר</th>
+                <th>סוג</th>
+                <th>כתובת</th>
+                <th>טלפון נייד</th>
+                <th>דוא"ל</th>
+            </tr>
+            @for (item of processService.getContactPersons; track $index) {
+                <app-contact-item [contact]="item" />
+            }
+            @if (showAddContactForm) {
+                <app-add-contact-item [form]="form" />
+                <button type="submit" class="add-button">+</button>
+            }
+        </table>
+        @if(!processService.getContactPersons.length) {
+            <p style="padding: 10px; text-align: center;">לא קיימים אנשי קשר.</p>
+        }
+    </form>
+    <button class="add-contact-button" (click)="showAddContactForm = !showAddContactForm">
+        {{!showAddContactForm ? "הוסף איש קשר" : "הסתר טופס"}}
+    </button>
+</div>

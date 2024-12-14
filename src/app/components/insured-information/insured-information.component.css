@@ -1,0 +1,15 @@
+.container {
+    padding: 15px;
+    display: flex;
+    gap: 40px;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-label {
+    font-weight: 600;
+}

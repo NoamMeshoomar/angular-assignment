@@ -1,0 +1,11 @@
+<div class="container">
+    @if(label) {
+        <label for="superClaimType">{{label}}</label>
+    }
+    <select name="superClaimType" id="superClaimType" [formControl]="control">
+        <option value="" selected disabled hidden></option>
+        @for(item of items; track item.code) {
+            <option [value]="item.code">{{item.value}}</option>
+        }
+    </select>
+</div>

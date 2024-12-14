@@ -1,0 +1,10 @@
+<tr>
+    <td>
+        <input type="checkbox" [checked]="contact.deliveryFlag" (change)="onChangeToggleFavorite($event)">
+    </td>
+    <td>{{contact.name}}</td>
+    <td>{{contact.type.value}}</td>
+    <td>{{contact.address}}</td>
+    <td>{{contact.phoneNumber | phoneformat}}</td>
+    <td>{{contact.email}}</td>
+</tr>

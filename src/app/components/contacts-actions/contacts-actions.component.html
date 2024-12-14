@@ -1,0 +1,14 @@
+<div class="container">
+    <p class="section-title">ריכוז אנשי קשר</p>
+    <div class="actions">
+        <p>מספר אנשי קשר בתהליך: {{contacts.getContactPersons.length}}</p>
+        <div class="actions-buttons">
+            <p>פעולות אפשריות:</p>
+            <div class="buttons">
+                <button (click)="onClickAddInsuredToContacts()">הוספת מבוטח</button>
+                <button (click)="onClickFullReset()">איפוס מלא</button>
+                <button (click)="onClickRemoveUnfavorites()">איפוס אנשי קשר</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+    <p style="white-space: nowrap;">פרטי מבוטח:</p>
+    <div class="details">
+        <div class="detail">
+            <p class="detail-label">שם</p>
+            <p>{{insuredInformation.firstName}} {{insuredInformation.lastName}}</p>
+        </div>
+        <div class="detail">
+            <p class="detail-label">ת.ז</p>
+            <p>{{insuredInformation.identity}}</p>
+        </div>
+        <div class="detail">
+            <p class="detail-label">גיל</p>
+            <p>{{insuredInformation.age}}</p>
+        </div>
+        <div class="detail">
+            <p class="detail-label">כתובת</p>
+            <p>{{insuredInformation.address.streetName}}, {{insuredInformation.address.cityName}}</p>
+        </div>
+    </div>
+</div>

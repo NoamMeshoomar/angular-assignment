@@ -1,0 +1,20 @@
+<tr>
+    <td>
+        <input type="checkbox" [formControl]="form.controls['deliveryFlag']">
+    </td>
+    <td>
+        <input type="text" [formControl]="form.controls['name']" />
+    </td>
+    <td>
+        <app-dropdown [items]="submittedBy" [control]="form.controls['type']" />
+    </td>
+    <td>
+        <input type="text" [formControl]="form.controls['address']" />
+    </td>
+    <td>
+        <input type="text" [formControl]="form.controls['phoneNumber']" />
+    </td>
+    <td>
+        <input type="text" [formControl]="form.controls['email']" />
+    </td>
+</tr>

@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(238, 238, 238);
+}
+
+form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+
+.date-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.date-input input {
+    padding: 5px;
+}
+
+.error {
+    margin-top: 10px;
+    color: red;
+}
