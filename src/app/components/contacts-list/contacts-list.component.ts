@@ -25,7 +25,7 @@ export class ContactsListComponent {
       }
       return { error: "חייב להיות לפחות איש קשר מעודף אחד" };
     }]),
-    name: new FormControl('', [Validators.required, Validators.pattern("^[א-ת]+$")]),
+    name: new FormControl('', [Validators.required, Validators.pattern("^[א-ת ]+$")]),
     type: new FormControl('', Validators.required),
     address: new FormControl(''),
     phoneNumber: new FormControl('', [Validators.required, Validators.pattern("^[0-9]{10}$")]),
