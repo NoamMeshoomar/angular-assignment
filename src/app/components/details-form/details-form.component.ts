@@ -36,6 +36,7 @@ export class DetailsFormComponent implements OnInit, AfterViewInit {
     });
 
     this.form.get("submittedBy")?.valueChanges.subscribe((value: any) => {
+      if(!value) return;
       if(!this.contacts.find((contact) => contact.type.code === +value)) {
         alert("חייב להיות איש קשר מאותו הסוג");
       }

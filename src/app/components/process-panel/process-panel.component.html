@@ -10,6 +10,6 @@
     <app-contacts-actions />
     <app-contacts-list />
     <div class="bottom">
-        <button (click)="onClickSubmitForm()">המשך</button>
+        <button [disabled]="!form?.valid" [style]="{'opacity': !form?.valid ? .4 : 1}" (click)="onClickSubmitForm()">המשך</button>
     </div>
 </div>
